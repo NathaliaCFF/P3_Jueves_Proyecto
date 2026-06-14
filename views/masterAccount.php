@@ -1,3 +1,5 @@
+<div class="master-account">
+
 <div class="container">
 
 <div class="card">
@@ -144,6 +146,8 @@
         </tbody>
 
     </table>
+
+</div>
 
 </div>
 

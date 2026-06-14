@@ -15,6 +15,7 @@ if (!isset($_SESSION['usuario'])) {
     <title>QAPP Dashboard</title>
 
     <link rel="stylesheet" href="../public/assets/css/dashboard.css">
+    <link rel="stylesheet" href="../public/assets/css/masterAccount.css">
 </head>
 
 <body>

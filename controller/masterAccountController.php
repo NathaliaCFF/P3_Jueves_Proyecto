@@ -2,6 +2,17 @@
 
 require_once "../models/masterAccountModel.php";
 
+header('Content-Type: application/json; charset=utf-8');
+
+set_exception_handler(function (Throwable $e): void {
+    http_response_code(500);
+
+    echo json_encode([
+        'success' => false,
+        'message' => $e->getMessage()
+    ]);
+});
+
 class masterAccountController
 {
     private $model;

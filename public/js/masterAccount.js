@@ -56,7 +56,15 @@ function limpiarFormulario() {
 function cargarLista(q = '') {
 
     fetch('../controller/masterAccountController.php?action=listar&q=' + encodeURIComponent(q))
-        .then(response => response.json())
+        .then(async response => {
+            const data = await response.json();
+
+            if (!response.ok || !Array.isArray(data)) {
+                throw new Error(data.message || 'No se pudo cargar la lista');
+            }
+
+            return data;
+        })
         .then(data => {
 
             tablaCuentas.innerHTML = '';
@@ -88,7 +96,7 @@ function cargarLista(q = '') {
         .catch(error => {
 
             console.error(error);
-            alert('Error cargando cuentas');
+            alert('Error cargando cuentas: ' + error.message);
 
         });
 }
