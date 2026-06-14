@@ -1,6 +1,5 @@
 <div class="container">
 
-```
 <div class="card">
 
     <h1>Maestro de Cuentas</h1>
@@ -108,13 +107,11 @@
     </div>
 
 </div>
-```
 
 </div>
 
 <div id="modalBusqueda" class="modal">
 
-```
 <div class="modal-content">
 
     <div class="modal-header">
@@ -149,6 +146,5 @@
     </table>
 
 </div>
-```
 
 </div>

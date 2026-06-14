@@ -1,6 +1,5 @@
 document.addEventListener('DOMContentLoaded', function(){
 
-```
 const sidebar = document.getElementById('sidebar');
 const btncollapse = document.getElementById('sidebarCollapse');
 const contenedor = document.getElementById('contenedor-principal');
@@ -115,6 +114,6 @@ window.cargarContenido = function(archivo){
     });
 
 };
-```
 
 });
+

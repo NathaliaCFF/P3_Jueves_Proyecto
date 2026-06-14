@@ -1,6 +1,5 @@
 function initmasterAccount() {
 
-```
 const cuenta = document.getElementById('cuenta');
 const descripcion = document.getElementById('descripcion');
 const nivel = document.getElementById('nivel');
@@ -255,6 +254,5 @@ document.getElementById('inactivarCuenta').onclick = function () {
 };
 
 console.log('Master Account inicializado');
-```
 
 }
